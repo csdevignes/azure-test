@@ -1,0 +1,67 @@
+{
+	"name": "TransformBakery",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "BakerySales",
+						"type": "DatasetReference"
+					},
+					"name": "Sales"
+				},
+				{
+					"dataset": {
+						"referenceName": "BakeryPrice",
+						"type": "DatasetReference"
+					},
+					"name": "Price"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          datetime as string,",
+				"          {day of week} as string,",
+				"          total as string,",
+				"          place as string,",
+				"          angbutter as string,",
+				"          {plain bread} as string,",
+				"          jam as string,",
+				"          americano as string,",
+				"          croissant as string,",
+				"          {caffe latte} as string,",
+				"          {tiramisu croissant} as string,",
+				"          {cacao deep} as string,",
+				"          {pain au chocolat} as string,",
+				"          {almond croissant} as string,",
+				"          {croque monsieur} as string,",
+				"          {mad garlic} as string,",
+				"          {milk tea} as string,",
+				"          {gateau chocolat} as string,",
+				"          pandoro as string,",
+				"          {cheese cake} as string,",
+				"          {lemon ade} as string,",
+				"          {orange pound} as string,",
+				"          wiener as string,",
+				"          {vanila latte} as string,",
+				"          {berry ade} as string,",
+				"          tiramisu as string,",
+				"          {merinque cookies} as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> Sales",
+				"source(output(",
+				"          Name as string,",
+				"          price as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> Price"
+			]
+		}
+	}
+}
