@@ -1,0 +1,132 @@
+{
+	"name": "BakerySales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageBakery",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Bakery_Sales.csv",
+				"container": "bakery"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "datetime",
+				"type": "String"
+			},
+			{
+				"name": "day of week",
+				"type": "String"
+			},
+			{
+				"name": "total",
+				"type": "String"
+			},
+			{
+				"name": "place",
+				"type": "String"
+			},
+			{
+				"name": "angbutter",
+				"type": "String"
+			},
+			{
+				"name": "plain bread",
+				"type": "String"
+			},
+			{
+				"name": "jam",
+				"type": "String"
+			},
+			{
+				"name": "americano",
+				"type": "String"
+			},
+			{
+				"name": "croissant",
+				"type": "String"
+			},
+			{
+				"name": "caffe latte",
+				"type": "String"
+			},
+			{
+				"name": "tiramisu croissant",
+				"type": "String"
+			},
+			{
+				"name": "cacao deep",
+				"type": "String"
+			},
+			{
+				"name": "pain au chocolat",
+				"type": "String"
+			},
+			{
+				"name": "almond croissant",
+				"type": "String"
+			},
+			{
+				"name": "croque monsieur",
+				"type": "String"
+			},
+			{
+				"name": "mad garlic",
+				"type": "String"
+			},
+			{
+				"name": "milk tea",
+				"type": "String"
+			},
+			{
+				"name": "gateau chocolat",
+				"type": "String"
+			},
+			{
+				"name": "pandoro",
+				"type": "String"
+			},
+			{
+				"name": "cheese cake",
+				"type": "String"
+			},
+			{
+				"name": "lemon ade",
+				"type": "String"
+			},
+			{
+				"name": "orange pound",
+				"type": "String"
+			},
+			{
+				"name": "wiener",
+				"type": "String"
+			},
+			{
+				"name": "vanila latte",
+				"type": "String"
+			},
+			{
+				"name": "berry ade",
+				"type": "String"
+			},
+			{
+				"name": "tiramisu",
+				"type": "String"
+			},
+			{
+				"name": "merinque cookies",
+				"type": "String"
+			}
+		]
+	}
+}
