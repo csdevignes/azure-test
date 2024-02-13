@@ -1,0 +1,9 @@
+{
+	"name": "Claire-Factory",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5da86159-1cd7-46d6-b055-ee1a0299770d",
+		"tenantId": "158716cf-46b9-48ca-8c49-c7bb67e575f3"
+	}
+}
